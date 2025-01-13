@@ -1,0 +1,82 @@
+.container {
+  height: 660px;
+  width: 100%;
+
+  display: flex;
+
+  .left {
+    width: 45%;
+    height: 100%;
+    padding-top: 100px;
+    font-size: 42px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    .wrapper {
+      width: 500px;
+    }
+  }
+
+  .right {
+    width: 55%;
+    color: #fff;
+
+    padding-top: 100px;
+
+    .about {
+      padding-top: 20px;
+      width: 700px;
+      color: #c7c7c7;
+      text-align: justify;
+
+      padding-bottom: 20px;
+    }
+
+    .skillWrap {
+      padding-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      width: 80%;
+    }
+  }
+}
+
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 10px;
+  padding-bottom: 40px;
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .lightText {
+    color: #c7c7c7;
+    font-size: 18px;
+
+    &_point {
+      color: #c7c7c7;
+      font-size: 18px;
+      padding-top: 10px;
+      text-align: justify;
+    }
+  }
+
+  .company {
+    font-size: 20px;
+    color: #d3e97a;
+  }
+
+  .point {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  height: 45px;
+  width: 170px;
+  border-radius: 30;
+  background-color: #d3e97a;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 14px;
+
+  cursor: pointer;
+  .dot {
+    font-size: 25px;
+  }
+
+  &:hover {
+    background-color: #0a0a0a;
+    color: #d3e97a;
+    border: 1px solid #d3e97a;
+  }
+}

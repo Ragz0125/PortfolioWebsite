@@ -1,0 +1,71 @@
+$breakpoint-mobile: 768px;
+
+.container {
+  height: 600px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $breakpoint-mobile) {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+      width: 500px;
+
+      .intro {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 500;
+      }
+
+      .description {
+        padding-top: 10px;
+        color: #c7c7c7;
+        font-size: 14px;
+      }
+
+      .buttonRow {
+        padding-top: 15px;
+        display: flex;
+        gap: 15px;
+
+        .iconContainer {
+          cursor: pointer;
+          height: 45px;
+          width: 45px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          background-color: #222222;
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .imageContainer {
+      height: 500px;
+      width: 400px;
+      border-radius: 10px;
+      background-image: url("/images/hero-section-pic.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
