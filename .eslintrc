@@ -4,8 +4,9 @@
       "react/prop-types": "off", // Disables the react/prop-types rule
       "no-unreachable": "off",
       "jsx-a11y/alt-text": "off",
-      "no-explicit-any":"off",
-      "no-unescaped-entities":"off"
+      "typescript-eslint/no-explicit-any":"off",
+      "typescript-eslint/no-unused-vars":"off",
+      "no-unescaped-entities":"off",
     }
   }
   
