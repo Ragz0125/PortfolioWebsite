@@ -2,10 +2,8 @@
 import { EXPERIENCE } from "@/utils";
 import styles from "./ExperienceSection.module.scss";
 
-import { useRouter } from "next/navigation";
-
 const ExperienceSection = () => {
-  const router = useRouter();
+  
   return (
     <div className={styles.container}>
       <div className={styles.left}>

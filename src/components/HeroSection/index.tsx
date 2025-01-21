@@ -3,10 +3,8 @@ import { gitHubUrl, HERO_SECTION_DESCRIPTION, linkedInUrl, openInNewTab } from "
 import styles from "./HeroSection.module.scss";
 import Button from "../Button";
 import { GitHubIcon, LinkedinIcon } from "../Icons";
-import { useRouter } from "next/navigation";
 
 const HeroSection = () => {
-  const router = useRouter()
 
   return (
     <div className={styles.container}>

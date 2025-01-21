@@ -1,7 +1,11 @@
 import styles from "./Button.module.scss";
-const Button = ({title, onClick}:any) => {
+interface ButtonProps {
+  title?: string;
+  onClick?: Function
+}
+const Button = ({ title, onClick }: ButtonProps) => {
   return (
-    <div className={styles.container} onClick={onClick}>
+    <div className={styles.container} onClick={() => onClick}>
       <div>{title}</div>
       <div className={styles.dot}>•</div>
     </div>

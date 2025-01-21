@@ -1,12 +1,20 @@
 "use client";
-import { useState } from "react";
+import { ChangeEvent, useState } from "react";
 import Button from "../Button";
 import styles from "./ContactSection.module.scss";
 import emailjs from "emailjs-com";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "@/utils";
 
+interface FormProps{
+  [key: string]: unknown;
+  name: string;
+  subject: string;
+  email: string;
+  message: string;
+}
+
 const ContactSection = () => {
-  const [formData, setFormData] = useState<any>({
+  const [formData, setFormData] = useState<FormProps>({
     name: "",
     subject: "",
     email: "",
@@ -19,7 +27,7 @@ const ContactSection = () => {
       .send(
         SERVICE_ID, // Replace with your EmailJS service ID
         TEMPLATE_ID, // Replace with your EmailJS template ID
-        formData,
+        formData as Record<string, unknown>,
         PUBLIC_KEY // Replace with your EmailJS public key
       )
       .then(
@@ -35,7 +43,7 @@ const ContactSection = () => {
       );
   };
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
@@ -88,7 +96,7 @@ const ContactSection = () => {
             onChange={(e) => handleChange(e)}
           ></input>
         </div>
-        <Button title={"SUBMIT"} onClick={submitForm} />
+        <Button title={"SUBMIT"} onClick={()=>submitForm} />
       </div>
     </div>
   );

@@ -1,6 +1,10 @@
 import styles from "./SkillButton.module.scss"
 
-const SkillButton = ({skill}:any) => {
+interface SkillButtonProps{
+    skill?: string
+}
+
+const SkillButton = ({skill}:SkillButtonProps) => {
     return(
         <div className={styles.wrapper}>
             {skill}

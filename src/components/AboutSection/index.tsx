@@ -1,5 +1,4 @@
 "use client";
-import { style } from "framer-motion/client";
 import styles from "./AboutSection.module.scss";
 import {
   ABOUT_SECTION_DESCRIPTION,
@@ -11,7 +10,11 @@ import { useRouter } from "next/navigation";
 import Button from "../Button";
 import { GitHubIcon, LinkedinIcon } from "../Icons";
 
-const AboutSection = ({ doNotShowLink }: any) => {
+interface AboutSectionProps{
+  doNotShowLink?: boolean
+}
+
+const AboutSection = ({ doNotShowLink }:AboutSectionProps ) => {
   const router = useRouter();
   return (
     <div className={styles.container}>

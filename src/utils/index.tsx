@@ -42,8 +42,8 @@ export const EXPERIENCE = [
 export const linkedInUrl = "https://www.linkedin.com/in/raghav-rajaraman-724a7a173";
 export const gitHubUrl = "https://github.com/Ragz0125"
 
-export const openInNewTab =(url:any)=>{
-  window.open(url,"_blank")
+export const openInNewTab =(url: string)=>{
+  window.open(String(url),"_blank")
 }
 
 export const SERVICE_ID = "service_e05ea4q"
