@@ -96,7 +96,7 @@ const ContactSection = () => {
             onChange={(e) => handleChange(e)}
           ></input>
         </div>
-        <Button title={"SUBMIT"} onClick={()=>submitForm} />
+        <Button title={"SUBMIT"} onClick={submitForm} />
       </div>
     </div>
   );
