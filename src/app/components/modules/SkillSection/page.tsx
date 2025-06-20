@@ -1,7 +1,6 @@
 "use client"
 import styled from "styled-components";
 import Title from "../../common/Title/page";
-import { Container, Wrapper } from "../AboutSection/page";
 import {
   FIRST_COLOR,
   SECOND_COLOR,
@@ -9,6 +8,7 @@ import {
   THIRD_COLOR,
 } from "@/app/utils/page";
 import RevealAnimation from "../../common/RevealAnimation/page";
+import { Element } from "react-scroll";
 
 const SkillSection = () => {
   return (
@@ -41,7 +41,20 @@ const SkillTab = ({ title, imageUrl }: any) => {
     </TabWrapper>
   );
 };
+const Wrapper = styled(Element)`
+  width: 100%;
+  height: 55%;
 
+  padding-top: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+const Container = styled.div`
+  height: 100%;
+  width: 85%;
+`;
 const TabWrapper = styled.div`
   width: 150px;
   height: 150px;

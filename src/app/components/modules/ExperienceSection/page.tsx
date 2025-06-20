@@ -1,8 +1,8 @@
 "use client"
 import styled from "styled-components";
 import Title from "../../common/Title/page";
-import { Container, Wrapper } from "../AboutSection/page";
 import { EXPERIENCE_CONTENT } from "@/app/utils/page";
+import { Element } from "react-scroll";
 import RevealAnimation from "../../common/RevealAnimation/page";
 
 const ExperienceSection = () => {
@@ -35,6 +35,22 @@ const ExperienceSection = () => {
 };
 
 export default ExperienceSection;
+
+const Wrapper = styled(Element)`
+  width: 100%;
+  height: 55%;
+
+  padding-top: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Container = styled.div`
+  height: 100%;
+  width: 85%;
+`;
 
 const MainContent = styled.div`
   height: 100%;
