@@ -1,7 +1,7 @@
 "use client"
 import styled from "styled-components";
 import Title from "../../common/Title/page";
-import { EXPERIENCE_CONTENT } from "@/app/utils/page";
+import { EXPERIENCE_CONTENT } from "@/app/utils/common";
 import { Element } from "react-scroll";
 import RevealAnimation from "../../common/RevealAnimation/page";
 

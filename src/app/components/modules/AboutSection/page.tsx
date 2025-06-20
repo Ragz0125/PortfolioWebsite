@@ -6,7 +6,7 @@ import {
   FIRST_COLOR,
   SECOND_COLOR,
   THIRD_COLOR,
-} from "@/app/utils/page";
+} from "@/app/utils/common";
 import Button from "../../common/Button/page";
 import RevealAnimation from "../../common/RevealAnimation/page";
 import { Element } from "react-scroll";

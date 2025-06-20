@@ -4,7 +4,7 @@ import {
   LOADER_CONTENT,
   SECOND_COLOR,
   THIRD_COLOR,
-} from "@/app/utils/page";
+} from "@/app/utils/common";
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
