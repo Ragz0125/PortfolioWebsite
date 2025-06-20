@@ -1,3 +1,4 @@
+"use client"
 import {
   FIRST_COLOR,
   SECOND_COLOR,

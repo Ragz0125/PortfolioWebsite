@@ -1,3 +1,4 @@
+"use client"
 import styled from "styled-components";
 import Title from "../../common/Title/page";
 import { Container, Wrapper } from "../AboutSection/page";
