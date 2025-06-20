@@ -6,7 +6,7 @@ import {
   SERVICE_ID,
   TEMPLATE_ID,
   THIRD_COLOR,
-} from "@/app/utils/page";
+} from "@/app/utils/common";
 import styled from "styled-components";
 import Title from "../../common/Title/page";
 import Button from "../../common/Button/page";

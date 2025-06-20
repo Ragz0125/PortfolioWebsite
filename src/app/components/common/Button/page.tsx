@@ -1,5 +1,5 @@
 "use client"
-import { FIRST_COLOR, SECOND_COLOR, THIRD_COLOR } from "@/app/utils/page";
+import { FIRST_COLOR, SECOND_COLOR, THIRD_COLOR } from "@/app/utils/common";
 import styled from "styled-components";
 
 const Button = ({ title, isSecondary = false, onClick }: any) => {
