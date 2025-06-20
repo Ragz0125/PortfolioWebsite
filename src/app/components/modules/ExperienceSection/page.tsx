@@ -38,7 +38,7 @@ export default ExperienceSection;
 
 const Wrapper = styled(Element)`
   width: 100%;
-  height: 55%;
+  height: 60%;
 
   padding-top: 60px;
 
