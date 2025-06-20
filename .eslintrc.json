@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    // Completely disable the rule
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-explicit-any":"off",
+    "react/jsx-key":"off",
+    "react/no-unescaped-entities":"off",
+    "@next/next/no-img-element":"off",
+    
+
+    // OR: Use this instead if you want to allow unused variables with `_` prefix
+    // "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }]
+  }
+}
