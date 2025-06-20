@@ -1,3 +1,5 @@
+"use client"
+
 import {
   FIRST_COLOR,
   PUBLIC_KEY,
