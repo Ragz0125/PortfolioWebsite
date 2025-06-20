@@ -57,7 +57,7 @@ const Wrapper = styled(Element)`
   justify-content: center;
 `;
 
-export const Container = styled.div`
+const Container = styled.div`
   height: 100%;
   width: 85%;
 `;
