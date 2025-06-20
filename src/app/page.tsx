@@ -21,7 +21,7 @@ export default function Home() {
   }, []);
   return (
     <>
-      {true ? (
+      {loader ? (
         <Wrapper>
           <Loader />
         </Wrapper>
