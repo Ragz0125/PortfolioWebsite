@@ -7,6 +7,7 @@ import ContactForm from "./components/modules/ContactForm/page";
 import ExperienceSection from "./components/modules/ExperienceSection/page";
 import HomeSection from "./components/modules/HomeSection/page";
 import SkillSection from "./components/modules/SkillSection/page";
+import styled from "styled-components";
 
 export default function Home() {
   const [loader, setLoader] = useState<boolean>(true);
@@ -20,8 +21,10 @@ export default function Home() {
   }, []);
   return (
     <>
-      {loader ? (
-        <Loader />
+      {true ? (
+        <Wrapper>
+          <Loader />
+        </Wrapper>
       ) : (
         <>
           <NavBar />
@@ -35,3 +38,12 @@ export default function Home() {
     </>
   );
 }
+
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
