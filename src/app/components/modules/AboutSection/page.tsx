@@ -11,6 +11,17 @@ import Button from "../../common/Button/page";
 import RevealAnimation from "../../common/RevealAnimation/page";
 import { Element } from "react-scroll";
 
+export const Wrapper = styled(Element)`
+  width: 100%;
+  height: 70%;
+
+  padding-top: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const AboutSection = () => {
   const downloadFile =() => {
     const link = document.createElement('a');
@@ -46,16 +57,7 @@ const AboutSection = () => {
 
 export default AboutSection;
 
-export const Wrapper = styled(Element)`
-  width: 100%;
-  height: 70%;
 
-  padding-top: 60px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
 
 export const Container = styled.div`
   height: 100%;
