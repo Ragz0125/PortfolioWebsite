@@ -1,8 +1,9 @@
-"use client"
+"use client";
 import {
   FIRST_COLOR,
   SECOND_COLOR,
   SERVICES,
+  SOCIAL_MEDIA_LINKS,
   THIRD_COLOR,
 } from "@/app/utils/common";
 import { motion } from "framer-motion";
@@ -35,6 +36,21 @@ const HomeSection = () => {
           >
             UI is the bridge. UX is the experience of crossing it.
           </Line>
+          <SocialMediaRow
+            initial={{ opacity: 0, x: -70 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1.3, delay: 1.1 }}
+          >
+            <Icon href={SOCIAL_MEDIA_LINKS[0]} target="_blank">
+              <img src={"/github.png"} />
+            </Icon>
+            <Icon href={SOCIAL_MEDIA_LINKS[1]} target="_blank">
+              <img src={"/instagram.png"} />
+            </Icon>
+            <Icon href={SOCIAL_MEDIA_LINKS[2]} target="_blank">
+              <img src={"/twitter.png"} />
+            </Icon>
+          </SocialMediaRow>
         </Left>
         <Right>
           <ImageWrapper
@@ -134,4 +150,22 @@ const Bottom = styled(motion.div)`
 
   font-size: 13px;
   font-weight: 600;
+`;
+
+const SocialMediaRow = styled(motion.div)`
+  display: flex;
+  gap: 10px;
+`;
+
+const Icon = styled.a`
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 `;

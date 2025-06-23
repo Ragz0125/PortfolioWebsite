@@ -60,3 +60,4 @@ export const LOADER_CONTENT = ["R", "A", "G", "Z"];
 export const SERVICE_ID = "service_e05ea4q";
 export const TEMPLATE_ID = "template_ikjrjp2";
 export const PUBLIC_KEY = "dGPBrJ4InrqAK3f-A";
+export const SOCIAL_MEDIA_LINKS = ["https://github.com/Ragz0125", "https://www.instagram.com/raghavrajaraman/", "https://x.com/RaghavRajaraman"]
