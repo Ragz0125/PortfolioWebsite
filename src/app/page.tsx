@@ -12,13 +12,13 @@ import styled from "styled-components";
 export default function Home() {
   const [loader, setLoader] = useState<boolean>(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoader(false);
-    }, 4500);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoader(false);
+  //   }, 4500);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
   return (
     <>
       {loader ? (
