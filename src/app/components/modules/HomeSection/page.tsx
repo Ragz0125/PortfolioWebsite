@@ -27,7 +27,7 @@ const HomeSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.3, delay: 0.7 }}
           >
-            A UI/UX Developer
+            An UI/UX Developer
           </ColoredLine>
           <Line
             initial={{ opacity: 0, x: -70 }}
