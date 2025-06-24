@@ -10,7 +10,7 @@ import styled from "styled-components";
 
 const Loader = () => {
   return (
-    <Wrapper>
+    <LoaderWrapper>
       {LOADER_CONTENT.map((letter, index) => (
         <AnimatedLetter
           initial={{ opacity: 0, y: -100 }}
@@ -20,13 +20,13 @@ const Loader = () => {
           {letter}
         </AnimatedLetter>
       ))}
-    </Wrapper>
+    </LoaderWrapper>
   );
 };
 
 export default Loader;
 
-const Wrapper = styled.div`
+const LoaderWrapper = styled.div`
   height: 100%;
   width: 150px;
 
